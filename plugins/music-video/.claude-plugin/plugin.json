@@ -1,0 +1,11 @@
+{
+  "name": "music-video",
+  "version": "0.1.0",
+  "description": "Make a music video whose every frame is drawn by code (Canvas, WebGL, three.js) and rendered in headless Chrome: song analysis, lyric timing, look tests, storyboard, parallel shot agents, self-review, covers and posting copy, with a catalogue of eight styles from finished films.",
+  "author": {
+    "name": "ai-native-workshop"
+  },
+  "repository": "https://github.com/ai-native-workshop/ai-native-music-video",
+  "license": "MIT",
+  "keywords": ["music-video", "mv", "lyric-video", "animation", "canvas", "webgl", "three.js", "p5.js", "headless-chrome", "ffmpeg"]
+}

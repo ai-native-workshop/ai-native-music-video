@@ -1,0 +1,9 @@
+{
+  "name": "music-video-project",
+  "private": true,
+  "type": "module",
+  "description": "A code-rendered music video: index.html draws any frame as a function of song time; render.mjs renders it in headless Chrome and muxes the song with ffmpeg.",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}
