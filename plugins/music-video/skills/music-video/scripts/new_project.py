@@ -6,9 +6,9 @@
 Creates <folder> (one folder per song, e.g. its name in pinyin) holding:
   index.html, src/          the film page: main.js (the page contract), lib.js, caption.js, shots/_example.js, shots/_placeholder.js
   render.mjs                stills, sheets, strips, crops, frames, encode, compare (from the skill's scripts/)
-  tools/                    analyze_audio.py, fetch_lyrics.py, build_lyrics.py, make_timing.py, cut_vocal_tail.py, fill_post.py,
-                            check_frames.py, check_no_lyrics.py
-  docs/                     STORYBOARD.md, GUIDE.md, BRIEF.md, POST.tpl (templates to fill in)
+  tools/                    analyze_audio.py, fetch_lyrics.py, build_lyrics.py, make_timing.py, cut_vocal_tail.py, check_frames.py,
+                            check_no_lyrics.py
+  docs/                     STORYBOARD.md, GUIDE.md, BRIEF.md (templates to fill in)
   assets/, out/             empty; the song goes in assets/
   package.json, .gitignore
 The project keeps its own copies so it can always be rebuilt the way it was made, even after the skill changes.
@@ -17,8 +17,8 @@ Existing files are never overwritten. Afterwards: put the song in assets/ and ru
 import argparse, pathlib, re, shutil
 
 SKILL = pathlib.Path(__file__).resolve().parent.parent
-TOOLS = ['analyze_audio.py', 'fetch_lyrics.py', 'build_lyrics.py', 'cut_vocal_tail.py', 'fill_post.py', 'check_frames.py', 'check_no_lyrics.py']
-DOCS = ['STORYBOARD.md', 'GUIDE.md', 'BRIEF.md', 'POST.tpl']
+TOOLS = ['analyze_audio.py', 'fetch_lyrics.py', 'build_lyrics.py', 'cut_vocal_tail.py', 'check_frames.py', 'check_no_lyrics.py']
+DOCS = ['STORYBOARD.md', 'GUIDE.md', 'BRIEF.md']
 
 
 def main():
@@ -27,7 +27,7 @@ def main():
     ap.add_argument('--w', type=int, default=1920)
     ap.add_argument('--h', type=int, default=1080)
     ap.add_argument('--fps', type=int, default=30)
-    ap.add_argument('--title', default='', help='shown in the browser tab and on the example cover')
+    ap.add_argument('--title', default='', help="shown in the browser tab and on the example shot's first frame")
     a = ap.parse_args()
     dst = pathlib.Path(a.folder).resolve()
     name = dst.name
@@ -41,7 +41,7 @@ def main():
     for src, out in plan:
         if out.exists(): kept.append(out); continue
         out.parent.mkdir(parents=True, exist_ok=True)
-        if src.suffix in ('.json', '.html', '.py', '.js', '.md', '.tpl') or src.name in ('.gitignore',):
+        if src.suffix in ('.json', '.html', '.py', '.js', '.md') or src.name in ('.gitignore',):
             text = src.read_text(encoding='utf-8')
             if src.name == 'package.json': text = text.replace('"name": "music-video-project"', f'"name": "{name}"')
             if src.name == 'index.html' and a.title: text = re.sub(r'<title>.*?</title>', f'<title>{a.title}</title>', text)

@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ai-native-music-video",
-  "description": "Claude Code skill for music videos whose every frame is drawn by code: song analysis and lyric timing, side-by-side look tests, storyboard, a deterministic browser renderer, parallel shot agents, self-review, covers and posting copy.",
+  "description": "Claude Code skill for music videos whose every frame is drawn by code: song analysis and lyric timing, side-by-side look tests, storyboard, a deterministic browser renderer, parallel shot agents, self-review and wrap-up.",
   "owner": {
     "name": "ai-native-workshop"
   },
   "plugins": [
     {
       "name": "music-video",
-      "description": "Make a music video or a song short whose every frame is drawn by code (Canvas, WebGL, three.js) and rendered in headless Chrome with the song muxed by ffmpeg, no image or video generation. Workflow, scripts, templates and a catalogue of eight styles from finished films. Documentation in Chinese.",
+      "description": "Make a music video or a song short whose every frame is drawn by code (Canvas, WebGL, three.js) and rendered in headless Chrome with the song muxed by ffmpeg, no image or video generation. Workflow, scripts, templates and a catalogue of eight styles from finished films, with sample pictures. Documentation in Chinese.",
       "author": {
         "name": "ai-native-workshop"
       },

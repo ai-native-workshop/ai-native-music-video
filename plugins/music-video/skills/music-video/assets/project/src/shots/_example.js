@@ -21,7 +21,7 @@ export default {
       const b = S.beatPos(t), ph = b - Math.floor(b), slot = ((Math.floor(b) % 4) + 4) % 4;
       g.fillStyle = `rgba(255,255,255,${0.7 * (1 - ph)})`; g.fillRect(W * (slot + 0.5) / 4 - 24, H - 14, 48, 5);
     }
-    const title = document.title, k = 1 - L.seg(t, T.t0 + 1.5, T.t0 + 2.5);   // on the cover from frame 0, gone by 2.5 s
+    const title = document.title, k = 1 - L.seg(t, T.t0 + 1.5, T.t0 + 2.5);   // on screen from frame 0, gone by 2.5 s
     if (k > 0 && title) {
       g.globalAlpha = k; g.fillStyle = '#fff'; g.textAlign = 'center';
       g.font = `600 ${Math.round(Math.min(W, H) * 0.08)}px "PingFang SC", "Noto Sans CJK SC", sans-serif`; g.fillText(title, W / 2, H * 0.46);

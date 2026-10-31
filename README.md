@@ -6,29 +6,38 @@
 
 它整理自 2026 年 9–10 月用 Claude Opus 5.5 在 Claude Code 里做的八支片子。分工是：人定方向、看样片、按时间点挑错；Claude 写全部代码、自己检查画面。每支换了一种画风：
 
-| 片子 | 长度 | 画风 | 引擎 |
-|---|---|---|---|
-| 林宥嘉《说谎》 | 全曲 4:24，横屏 | 手绘水彩绘本 | p5.js + p5.brush |
-| 孙燕姿《我不难过》 | 全曲 5:20，横屏 | 纸雕灯箱 | Canvas 2D 纸层 + WebGL2 透光合成 |
-| Billie Eilish《BIRDS OF A FEATHER》 | 末段副歌 39 秒，横屏 | 黄昏湖面上的 4.5 万只鸟 | three.js，子画面平均出运动模糊和景深 |
-| FIELD OF VIEW《DAN DAN 心魅かれてく》 | 开头 26 秒，竖屏 | 会动的龙珠漫画 | three.js，游戏模型当底稿画成网点和墨线 |
-| 张惠妹《人质》 | 后半首 91 秒，竖屏 | 水下的墨与红，首尾是花窗 | WebGL 二维流体 |
-| 汪苏泷《万有引力》 | 54 秒，横屏 | 发光矢量的物理课 | Canvas 2D |
-| 周杰伦《枫》 | 后段 102 秒，竖屏 | 叶绿素显影（做完第一版，未发布） | three.js 程序化植物 |
-| 郑润泽《于是》 | 全曲 3:52，横屏 | 像素 + Q 版 | Canvas 2D 调色板缓冲 |
+<table>
+<tr>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/shuohuang.jpg" alt="林宥嘉《说谎》" width="100%"><br><b>林宥嘉《说谎》</b> · 手绘水彩绘本<br>全曲 4:24，横屏 · p5.js + p5.brush<!-- video:shuohuang --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wobunanguo.jpg" alt="孙燕姿《我不难过》" width="100%"><br><b>孙燕姿《我不难过》</b> · 纸雕灯箱<br>全曲 5:20，横屏 · Canvas 2D 纸层 + WebGL2 透光合成<!-- video:wobunanguo --></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/birdsofafeather.jpg" alt="Billie Eilish《BIRDS OF A FEATHER》" width="100%"><br><b>Billie Eilish《BIRDS OF A FEATHER》</b> · 黄昏湖面上的 4.5 万只鸟<br>末段副歌 39 秒，横屏 · three.js，子画面平均出运动模糊和景深<!-- video:birdsofafeather --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wukong.jpg" alt="FIELD OF VIEW《DAN DAN 心魅かれてく》" width="100%"><br><b>FIELD OF VIEW《DAN DAN 心魅かれてく》</b> · 会动的龙珠漫画<br>开头 26 秒，竖屏 · three.js，游戏模型当底稿画成网点和墨线<!-- video:wukong --></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/renzhi.jpg" alt="张惠妹《人质》" width="100%"><br><b>张惠妹《人质》</b> · 水下的墨与红，首尾是花窗<br>后半首 91 秒，竖屏 · WebGL 二维流体<!-- video:renzhi --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wanyouyinli.jpg" alt="汪苏泷《万有引力》" width="100%"><br><b>汪苏泷《万有引力》</b> · 发光矢量的物理课<br>54 秒，横屏 · Canvas 2D<!-- video:wanyouyinli --></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/feng.jpg" alt="周杰伦《枫》" width="100%"><br><b>周杰伦《枫》</b> · 叶绿素显影<br>后段 102 秒，竖屏 · three.js 程序化植物 · 做完第一版，没有发布</td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/yushi.png" alt="郑润泽《于是》" width="100%"><br><b>郑润泽《于是》</b> · 像素 + Q 版<br>全曲 3:52，横屏 · Canvas 2D 调色板缓冲<!-- video:yushi --></td>
+</tr>
+</table>
+
+竖屏的三支（悟空、人质、枫）用的是同一时刻的横版取景。每种画风怎么做、踩过什么坑，见 [styles.md](plugins/music-video/skills/music-video/references/styles.md)。
 
 ## 它做什么
 
-- **流程**：量歌 → 取逐字歌词并对到人声上 → 提两三个方向，并行做试片给你挑 → 人物定妆 → 分镜和节拍表 → 从选中的试片长出整片引擎 → 子代理分镜头并行 → 用联系表、逐帧条、原尺寸局部自查 → 合成 → 按你的时间点修改 → 终检 → 四种比例的封面和投稿文案 → 收尾整理。每一步做完先给你看。
-- **规则**：每一帧只由时间决定，所以能多进程乱序渲染、改哪段只重渲哪段，交付前正着倒着各渲一遍逐字节比对；歌词只当数据，不出现在任何模型输出里；第一帧就是封面；横竖屏由内容决定。
-- **工具**：建项目、渲染（预览、联系表、逐帧条、局部、全片一览、帧序列、合成、比对）、量歌、取逐字歌词和对时间、去掉片段开头上一句的尾音、帧检查（亮度、黑帧、突变、颗粒是不是网格）、扫描文档里混进的歌词、填投稿文案。脚本在已经发布的片子上验证过：同样的输入，输出和当时逐字节相同。
-- **经验**：八支片子的画风目录（怎么做、为什么适合那首歌、踩过的坑、速度）；人物的解剖和图层清单；八支片子里被指出的每个问题，以及以后要查什么。
+- **流程**：量歌 → 取逐字歌词并对到人声上 → 提两三个方向，并行做试片给你挑 → 人物定妆 → 分镜和节拍表 → 从选中的试片长出整片引擎 → 子代理分镜头并行 → 用联系表、逐帧条、原尺寸局部自查 → 合成 → 按你的时间点修改 → 终检 → 收尾整理。每一步做完先给你看。
+- **规则**：每一帧只由时间决定，所以能多进程乱序渲染、改哪段只重渲哪段，交付前正着倒着各渲一遍逐字节比对；歌词只当数据，不出现在任何模型输出里；第一帧就是一幅完整的画；横竖屏由内容决定。
+- **工具**：建项目、渲染（预览、联系表、逐帧条、局部、全片一览、帧序列、合成、比对）、量歌、取逐字歌词和对时间、去掉片段开头上一句的尾音、帧检查（亮度、黑帧、突变、颗粒是不是网格）、扫描文档里混进的歌词。脚本在已经发布的片子上验证过：同样的输入，输出和当时逐字节相同。
+- **经验**：八支片子的画风目录（样图、怎么做、为什么适合那首歌、踩过的坑、速度）；人物的解剖和图层清单；八支片子里被指出的每个问题，以及以后要查什么。
 
 ## 它不做什么
 
 - 不替你找音乐：音频由你提供（专辑原版，和歌词时间轴对得上的版本）。
 - 不在回复、文件和代码里写歌词原文：歌词由脚本下载、处理，画面从数据里取字。
-- 不替你投稿。
 
 ## 安装
 
@@ -68,22 +77,23 @@ plugins/music-video/skills/music-video/
 ├── references/
 │   ├── song.md              音频来源、量歌、歌词只当数据、逐字歌词对时、字幕、截片段、人声分离
 │   ├── direction.md         从歌到片、范围和横竖、第一帧、节奏和镜头、热血同人、提方向、试片
-│   ├── styles.md            画风目录
+│   ├── styles.md            画风目录（附样图）
 │   ├── characters.md        人物：类型和好看、做法、定妆表、剪影、Q 版、3D 模型、解剖和图层清单
 │   ├── production.md        分镜、节拍表、给子代理的说明、并行、总装、修改轮
 │   ├── pipeline.md          页面约定、render.mjs、确定性、渲染器和速度、合成和色彩
 │   ├── review.md            自查、终检、审片清单
-│   └── release.md           封面、文案、求提示词、版权、收尾
+│   └── wrapup.md            验收之后、素材和许可、收尾整理
 ├── scripts/                 new_project.py  render.mjs  analyze_audio.py  fetch_lyrics.py  build_lyrics.py
-│                            cut_vocal_tail.py  check_frames.py  check_no_lyrics.py  fill_post.py
+│                            cut_vocal_tail.py  check_frames.py  check_no_lyrics.py
 └── assets/
     ├── project/             页面骨架（页面约定、逐字字幕、示例镜头、占位镜头）和 make_timing.py
-    └── docs/                分镜、写镜头说明、子代理任务书、投稿文案、项目 README 的模板
+    ├── docs/                分镜、写镜头说明、子代理任务书、项目 README 的模板
+    └── styles/              八支片子的样图
 ```
 
 ## 维护
 
-每做完一支片子，把新画风加进 `styles.md`，把被指出的问题加进 `review.md` 的审片清单。清单里的每一条都真的发生过。
+每做完一支片子，把新画风（附一张样图）加进 `styles.md`，把被指出的问题加进 `review.md` 的审片清单。清单里的每一条都真的发生过。
 
 ## 致谢
 

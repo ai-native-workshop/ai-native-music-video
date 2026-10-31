@@ -20,9 +20,9 @@
   tools/                   Python 工具的副本，加上本片的 make_timing.py
   assets/                  原曲；lyrics/（原始歌词文件和 lyrics.json）；analysis/audio.json；timing.json；audio/film.wav；
                            models/、fonts/（带来源和许可证）
-  docs/                    STORYBOARD.md、GUIDE.md、briefs/、POST.tpl、POST.txt、img/（记录用的图）
+  docs/                    STORYBOARD.md、GUIDE.md、briefs/、img/（记录用的图）
   look_tests/<名字>/       每个试片一个目录，自己的 index.html 和 src/；clip.json 是试片的片段
-  out/                     frames*/、check/（随时可删）；成片和小副本；covers/；look_tests/
+  out/                     frames*/、check/（随时可删）；成片和小副本；look_tests/
 ```
 
 项目里带着自己的 `render.mjs` 和工具副本，这样以后 skill 改了，这支片子仍能按当时的方式重建。
@@ -35,7 +35,7 @@
 - `window.renderAt(t)`：画出原曲第 t 秒的那一帧；可以是 async，返回时画布上就是那一帧。
 - `window.FILM`：`{ t0, t1, fps, w, h, frames, shots: [{ id, name, t0, t1, f0, f1, head }] }`。`head` 相同的镜头在同一个渲染任务里按顺序渲（只有共享模拟状态的镜头需要）。
 - `window.INFO.shot`：联系表格子上的标签。
-- 查询参数：`w`、`h`、`fps`、`timing`（时间表的路径）、`headless=1`，加上本片的开关（`--q` 传进去）。常备的开关：`text=0`（不画字幕，导出封面用）、`use=NAME`（所有镜头画同一个草图）、只画某一层、画质（子画面数）、封面模式。
+- 查询参数：`w`、`h`、`fps`、`timing`（时间表的路径）、`headless=1`，加上本片的开关（`--q` 传进去）。常备的开关：`text=0`（不画字幕）、`use=NAME`（所有镜头画同一个草图）、只画某一层、画质（子画面数）。
 - ES 模块不能从 `file://` 加载；`render.mjs` 自带一个静态服务器，根目录是项目文件夹，页面可以加载 `/assets/...`、`/node_modules/three/...`。
 - 骨架的 `src/main.js` 是一个 Canvas 2D 的实现：每帧重置画布状态，按时间找镜头，调用它的 `draw(K)`，再画字幕；缺文件的镜头画占位卡。three.js、自写 WebGL2、p5.js 的片子把 `drawFrame` 换成自己的渲染，约定不变。
 - 预览：`node render.mjs --serve`，在 Chrome 里打开它打印的地址：骨架有时间条，空格播放，方向键逐帧。重的画风实时播放会卡，那只是预览。
@@ -47,7 +47,7 @@
 ```json
 { "fps": 30, "w": 1920, "h": 1080, "t0": 51.2462, "t1": 105.3989,
   "bpm": 97.502, "beat": 0.61537, "bar": 2.46148, "bar0": 2.0166,
-  "shots": [{ "id": "s01", "t0": 51.2462, "t1": 56.169, "name": "封面" }],
+  "shots": [{ "id": "s01", "t0": 51.2462, "t1": 56.169, "name": "开场" }],
   "downbeats": [51.246, 53.708], "kicks": [[51.31, 0.62]], "snares": [[52.1, 0.48]],
   "lines": [{ "i": 8, "t": 52.344, "end": 54.304, "n": 12 }] }
 ```
