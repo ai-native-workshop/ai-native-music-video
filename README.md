@@ -1,5 +1,7 @@
 # AI-native Music Video
 
+**中文** · [English](README.en.md)
+
 一个 [Claude Code](https://claude.com/claude-code) skill：给一首歌做动画 MV，每一帧都是代码画的。浏览器里的 Canvas、WebGL 或 three.js 能画出歌里任意一秒，无头 Chrome 逐帧渲染，ffmpeg 配上原曲。不用生图、生视频模型。
 
 它整理自 2026 年 9–10 月用 Claude Opus 5.5 在 Claude Code 里做的八支片子。分工是：人定方向、看样片、按时间点挑错；Claude 写全部代码、自己检查画面。每支换了一种画风：
@@ -87,10 +89,6 @@ plugins/music-video/skills/music-video/
 
 - [ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase)（MIT）和 [PDoomVideo](https://github.com/JohnHeibel/PDoomVideo)：第一支片子的起步包。“页面画任意一秒、无头 Chrome 逐帧渲染、ffmpeg 合成”的做法和“给观众时间看懂”的节奏原则从这里开始。
 - 用到的开源工具和模型：p5.brush、three.js、puppeteer、ffmpeg、audio-separator 和 BS-RoFormer、rembg。
-
-## English
-
-A Claude Code skill for making a music video whose every frame is drawn by code: a browser page draws any moment of the song (Canvas, WebGL or three.js), headless Chrome renders it frame by frame, and ffmpeg adds the song. No image or video generation models. It was distilled from eight films made with Claude Opus 5.5 in autumn 2026, each in a different style: hand-painted watercolour, a paper-cut lightbox, 45,000 procedural birds, animated manga, an underwater ink fluid, a glowing-vector physics lecture, chlorophyll prints and pixel art. It covers the whole job: measuring the song and timing the lyrics character by character, side-by-side look tests, character sheets, the storyboard, a deterministic renderer, parallel shot agents, self-review with contact sheets and frame strips, encoding, covers, posting copy and the wrap-up. Its scripts were checked against the published films: the same input gives byte-identical output. The documentation is in Chinese.
 
 ## License
 
