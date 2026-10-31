@@ -8,20 +8,20 @@
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/shuohuang.jpg" alt="林宥嘉《说谎》" width="100%"><br><b>林宥嘉《说谎》</b> · 手绘水彩绘本<br>全曲 4:24，横屏 · p5.js + p5.brush<!-- video:shuohuang --></td>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wobunanguo.jpg" alt="孙燕姿《我不难过》" width="100%"><br><b>孙燕姿《我不难过》</b> · 纸雕灯箱<br>全曲 5:20，横屏 · Canvas 2D 纸层 + WebGL2 透光合成<!-- video:wobunanguo --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/shuohuang.jpg" alt="林宥嘉《说谎》" width="100%"><br><b>林宥嘉《说谎》</b> · 手绘水彩绘本<br>全曲 4:24，横屏 · p5.js + p5.brush · <a href="https://www.bilibili.com/video/BV1MSYA6GEsV/">B 站视频</a></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wobunanguo.jpg" alt="孙燕姿《我不难过》" width="100%"><br><b>孙燕姿《我不难过》</b> · 纸雕灯箱<br>全曲 5:20，横屏 · Canvas 2D 纸层 + WebGL2 透光合成 · <a href="https://www.bilibili.com/video/BV1UJHz6EEXe/">B 站视频</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/birdsofafeather.jpg" alt="Billie Eilish《BIRDS OF A FEATHER》" width="100%"><br><b>Billie Eilish《BIRDS OF A FEATHER》</b> · 黄昏湖面上的 4.5 万只鸟<br>末段副歌 39 秒，横屏 · three.js，子画面平均出运动模糊和景深<!-- video:birdsofafeather --></td>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wukong.jpg" alt="FIELD OF VIEW《DAN DAN 心魅かれてく》" width="100%"><br><b>FIELD OF VIEW《DAN DAN 心魅かれてく》</b> · 会动的龙珠漫画<br>开头 26 秒，竖屏 · three.js，游戏模型当底稿画成网点和墨线<!-- video:wukong --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/birdsofafeather.jpg" alt="Billie Eilish《BIRDS OF A FEATHER》" width="100%"><br><b>Billie Eilish《BIRDS OF A FEATHER》</b> · 黄昏湖面上的 4.5 万只鸟<br>末段副歌 39 秒，横屏 · three.js，子画面平均出运动模糊和景深 · <a href="https://www.bilibili.com/video/BV1eLHn6uEB8/">B 站视频</a></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wukong.jpg" alt="FIELD OF VIEW《DAN DAN 心魅かれてく》" width="100%"><br><b>FIELD OF VIEW《DAN DAN 心魅かれてく》</b> · 会动的龙珠漫画<br>开头 26 秒，竖屏 · three.js，游戏模型当底稿画成网点和墨线 · <a href="https://www.bilibili.com/video/BV1D6p56DEJk/">B 站视频</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/renzhi.jpg" alt="张惠妹《人质》" width="100%"><br><b>张惠妹《人质》</b> · 水下的墨与红，首尾是花窗<br>后半首 91 秒，竖屏 · WebGL 二维流体<!-- video:renzhi --></td>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wanyouyinli.jpg" alt="汪苏泷《万有引力》" width="100%"><br><b>汪苏泷《万有引力》</b> · 发光矢量的物理课<br>54 秒，横屏 · Canvas 2D<!-- video:wanyouyinli --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/renzhi.jpg" alt="张惠妹《人质》" width="100%"><br><b>张惠妹《人质》</b> · 水下的墨与红，首尾是花窗<br>后半首 91 秒，竖屏 · WebGL 二维流体 · <a href="https://www.bilibili.com/video/BV1W7pD6VEfB/">B 站视频</a></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wanyouyinli.jpg" alt="汪苏泷《万有引力》" width="100%"><br><b>汪苏泷《万有引力》</b> · 发光矢量的物理课<br>54 秒，横屏 · Canvas 2D · <a href="https://www.bilibili.com/video/BV1iwJi6jEm6/">B 站视频</a></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/feng.jpg" alt="周杰伦《枫》" width="100%"><br><b>周杰伦《枫》</b> · 叶绿素显影<br>后段 102 秒，竖屏 · three.js 程序化植物 · 做完第一版，没有发布</td>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/yushi.png" alt="郑润泽《于是》" width="100%"><br><b>郑润泽《于是》</b> · 像素 + Q 版<br>全曲 3:52，横屏 · Canvas 2D 调色板缓冲<!-- video:yushi --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/yushi.png" alt="郑润泽《于是》" width="100%"><br><b>郑润泽《于是》</b> · 像素 + Q 版<br>全曲 3:52，横屏 · Canvas 2D 调色板缓冲 · <a href="https://www.bilibili.com/video/BV16VxJ6xEUE/">B 站视频</a></td>
 </tr>
 </table>
 
@@ -77,7 +77,7 @@ plugins/music-video/skills/music-video/
 ├── references/
 │   ├── song.md              音频来源、量歌、歌词只当数据、逐字歌词对时、字幕、截片段、人声分离
 │   ├── direction.md         从歌到片、范围和横竖、第一帧、节奏和镜头、热血同人、提方向、试片
-│   ├── styles.md            画风目录（附样图）
+│   ├── styles.md            画风目录（附样图和视频链接）
 │   ├── characters.md        人物：类型和好看、做法、定妆表、剪影、Q 版、3D 模型、解剖和图层清单
 │   ├── production.md        分镜、节拍表、给子代理的说明、并行、总装、修改轮
 │   ├── pipeline.md          页面约定、render.mjs、确定性、渲染器和速度、合成和色彩

@@ -1,6 +1,6 @@
 # 画风目录
 
-八支成片各用了一种画风，试片和提案里还有十几种。每一支附一张样图（在 `assets/styles/`，挑画风时可以打开看）；每一条写：观感、怎么做、为什么适合那首歌、精致靠什么、踩过的坑、速度。选画风先读“怎么选”。
+八支成片各用了一种画风，试片和提案里还有十几种。每一支附一张样图（在 `assets/styles/`，挑画风时可以打开看）和 B 站视频链接；每一条写：观感、怎么做、为什么适合那首歌、精致靠什么、踩过的坑、速度。选画风先读“怎么选”。
 
 ## 目录
 - 怎么选画风
@@ -31,6 +31,8 @@
 
 ![说谎](../assets/styles/shuohuang.jpg)
 
+视频：[B 站](https://www.bilibili.com/video/BV1MSYA6GEsV/)
+
 
 林宥嘉《说谎》全曲 4:24，横屏 1080p，24 帧，10 章 48 镜，5 个子代理。
 
@@ -51,6 +53,8 @@
 
 ![我不难过](../assets/styles/wobunanguo.jpg)
 
+视频：[B 站](https://www.bilibili.com/video/BV1UJHz6EEXe/)
+
 
 孙燕姿《我不难过》全曲 5:20，横屏，24 帧，13 章，7 个子代理约 2 小时 15 分。
 
@@ -70,6 +74,8 @@
 ## 3 程序化 3D 场景和鸟群：《BIRDS OF A FEATHER》
 
 ![BIRDS OF A FEATHER](../assets/styles/birdsofafeather.jpg)
+
+视频：[B 站](https://www.bilibili.com/video/BV1eLHn6uEB8/)
 
 
 Billie Eilish 末段副歌 39 秒，横屏，30 帧。
@@ -92,6 +98,8 @@ Billie Eilish 末段副歌 39 秒，横屏，30 帧。
 ## 4 会动的漫画：《悟空》
 
 ![悟空](../assets/styles/wukong.jpg)
+
+视频：[B 站](https://www.bilibili.com/video/BV1D6p56DEJk/)
 
 样图：光束暴涨那一格的横版取景（片子是竖屏的）。
 
@@ -117,6 +125,8 @@ Billie Eilish 末段副歌 39 秒，横屏，30 帧。
 
 ![人质](../assets/styles/renzhi.jpg)
 
+视频：[B 站](https://www.bilibili.com/video/BV1W7pD6VEfB/)
+
 样图：红色绽开那一刻的横版取景（片子是竖屏的）。
 
 张惠妹《人质》后半首 91 秒，竖屏 1080×1920，30 帧。
@@ -138,6 +148,8 @@ Billie Eilish 末段副歌 39 秒，横屏，30 帧。
 ## 6 发光矢量科普讲堂：《万有引力》
 
 ![万有引力](../assets/styles/wanyouyinli.jpg)
+
+视频：[B 站](https://www.bilibili.com/video/BV1iwJi6jEm6/)
 
 
 汪苏泷《万有引力》预副歌加第一遍副歌 54 秒，横屏，30 帧。
@@ -173,6 +185,8 @@ Billie Eilish 末段副歌 39 秒，横屏，30 帧。
 ## 8 像素和 Q 版：《于是》
 
 ![于是](../assets/styles/yushi.png)
+
+视频：[B 站](https://www.bilibili.com/video/BV16VxJ6xEUE/)
 
 
 郑润泽《于是》全曲 3:52，横屏，30 帧，39 镜；3D 房间版被否之后改做的。

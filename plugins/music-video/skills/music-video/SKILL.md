@@ -105,7 +105,7 @@ node render.mjs --eval="CAPTION_TABLE()"                        # 每行字幕�
 | 周杰伦《枫》 | 后段 102 秒，竖 | 叶绿素显影 | three.js 程序化植物 | 约 2 小时出第一版（未发布） | — |
 | 郑润泽《于是》 | 全曲 3:52，横 | 像素 + Q 版 | Canvas 2D 调色板缓冲 | 3D 版被否后，像素版一夜，Q 版半天 | — |
 
-每种画风的样图、怎么做、为什么适合那首歌、踩了什么坑：`references/styles.md`。
+每种画风的样图和视频链接、怎么做、为什么适合那首歌、踩了什么坑：`references/styles.md`。
 
 ## 参考文件
 
@@ -113,7 +113,7 @@ node render.mjs --eval="CAPTION_TABLE()"                        # 每行字幕�
 
 - `references/song.md`：音频来源、量歌、读结构、歌词只当数据、取歌词和对时间、和声、字幕设计、截片段和尾音、人声分离。
 - `references/direction.md`：从歌到片的构思、范围和横竖、第一帧、节奏和镜头、热血和同人、提方向、试片、被否掉的方案。
-- `references/styles.md`：画风目录（八支成片各附样图，另有十几种试过或提过的画风）、怎么选画风。
+- `references/styles.md`：画风目录（八支成片各附样图和视频链接，另有十几种试过或提过的画风）、怎么选画风。
 - `references/characters.md`：人物的类型和好看、几种做人物的办法、定妆表、剪影、Q 版、现成 3D 模型、解剖和图层清单。
 - `references/production.md`：分镜、节拍表、共用部分、写给子代理的说明、并行、总装、修改轮、通宵模式。
 - `references/pipeline.md`：项目目录、页面约定、`timing.json`、`render.mjs`、确定性、渲染器和速度、合成和色彩、颗粒和发光、局部重渲。

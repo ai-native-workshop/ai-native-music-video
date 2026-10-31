@@ -8,20 +8,20 @@ It was distilled from eight films made with Claude Opus 5.5 in Claude Code in Se
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/shuohuang.jpg" alt="Shuo Huang 说谎 · Yoga Lin" width="100%"><br><b><i>Shuo Huang</i> 说谎 · Yoga Lin</b> · hand-painted watercolour picture book<br>full song, 4:24, landscape · p5.js + p5.brush<!-- video:shuohuang --></td>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wobunanguo.jpg" alt="Wo Bu Nan Guo 我不难过 · Stefanie Sun" width="100%"><br><b><i>Wo Bu Nan Guo</i> 我不难过 · Stefanie Sun</b> · paper-cut lightbox<br>full song, 5:20, landscape · Canvas 2D paper layers + a WebGL2 compositor that passes light through them<!-- video:wobunanguo --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/shuohuang.jpg" alt="Shuo Huang 说谎 · Yoga Lin" width="100%"><br><b><i>Shuo Huang</i> 说谎 · Yoga Lin</b> · hand-painted watercolour picture book<br>full song, 4:24, landscape · p5.js + p5.brush · <a href="https://www.bilibili.com/video/BV1MSYA6GEsV/">video on Bilibili</a></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wobunanguo.jpg" alt="Wo Bu Nan Guo 我不难过 · Stefanie Sun" width="100%"><br><b><i>Wo Bu Nan Guo</i> 我不难过 · Stefanie Sun</b> · paper-cut lightbox<br>full song, 5:20, landscape · Canvas 2D paper layers + a WebGL2 compositor that passes light through them · <a href="https://www.bilibili.com/video/BV1UJHz6EEXe/">video on Bilibili</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/birdsofafeather.jpg" alt="BIRDS OF A FEATHER · Billie Eilish" width="100%"><br><b><i>BIRDS OF A FEATHER</i> · Billie Eilish</b> · 45,000 birds over a lake at dusk<br>last chorus, 39 s, landscape · three.js; averaged sub-frames give motion blur and depth of field<!-- video:birdsofafeather --></td>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wukong.jpg" alt="DAN DAN 心魅かれてく · FIELD OF VIEW" width="100%"><br><b><i>DAN DAN 心魅かれてく</i> · FIELD OF VIEW</b> · Dragon Ball as a moving manga<br>opening 26 s, vertical · three.js; game models as under-drawing, rendered as screentone and ink<!-- video:wukong --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/birdsofafeather.jpg" alt="BIRDS OF A FEATHER · Billie Eilish" width="100%"><br><b><i>BIRDS OF A FEATHER</i> · Billie Eilish</b> · 45,000 birds over a lake at dusk<br>last chorus, 39 s, landscape · three.js; averaged sub-frames give motion blur and depth of field · <a href="https://www.bilibili.com/video/BV1eLHn6uEB8/">video on Bilibili</a></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wukong.jpg" alt="DAN DAN 心魅かれてく · FIELD OF VIEW" width="100%"><br><b><i>DAN DAN 心魅かれてく</i> · FIELD OF VIEW</b> · Dragon Ball as a moving manga<br>opening 26 s, vertical · three.js; game models as under-drawing, rendered as screentone and ink · <a href="https://www.bilibili.com/video/BV1D6p56DEJk/">video on Bilibili</a></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/renzhi.jpg" alt="Ren Zhi 人质 · A-Mei" width="100%"><br><b><i>Ren Zhi</i> 人质 · A-Mei</b> · ink and red under water, stained glass at both ends<br>second half, 91 s, vertical · 2D fluid simulation in WebGL<!-- video:renzhi --></td>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wanyouyinli.jpg" alt="Wan You Yin Li 万有引力 · Silence Wang" width="100%"><br><b><i>Wan You Yin Li</i> 万有引力 · Silence Wang</b> · a physics lecture drawn in glowing vectors<br>54 s, landscape · Canvas 2D<!-- video:wanyouyinli --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/renzhi.jpg" alt="Ren Zhi 人质 · A-Mei" width="100%"><br><b><i>Ren Zhi</i> 人质 · A-Mei</b> · ink and red under water, stained glass at both ends<br>second half, 91 s, vertical · 2D fluid simulation in WebGL · <a href="https://www.bilibili.com/video/BV1W7pD6VEfB/">video on Bilibili</a></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/wanyouyinli.jpg" alt="Wan You Yin Li 万有引力 · Silence Wang" width="100%"><br><b><i>Wan You Yin Li</i> 万有引力 · Silence Wang</b> · a physics lecture drawn in glowing vectors<br>54 s, landscape · Canvas 2D · <a href="https://www.bilibili.com/video/BV1iwJi6jEm6/">video on Bilibili</a></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/feng.jpg" alt="Feng 枫 · Jay Chou" width="100%"><br><b><i>Feng</i> 枫 · Jay Chou</b> · chlorophyll prints<br>later part, 102 s, vertical · three.js, procedural plants · first cut done, not released</td>
-<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/yushi.png" alt="Yu Shi 于是 · Zheng Runze" width="100%"><br><b><i>Yu Shi</i> 于是 · Zheng Runze</b> · pixel art with chibi characters<br>full song, 3:52, landscape · Canvas 2D, indexed-palette buffer<!-- video:yushi --></td>
+<td width="50%" valign="top"><img src="plugins/music-video/skills/music-video/assets/styles/yushi.png" alt="Yu Shi 于是 · Zheng Runze" width="100%"><br><b><i>Yu Shi</i> 于是 · Zheng Runze</b> · pixel art with chibi characters<br>full song, 3:52, landscape · Canvas 2D, indexed-palette buffer · <a href="https://www.bilibili.com/video/BV16VxJ6xEUE/">video on Bilibili</a></td>
 </tr>
 </table>
 
@@ -77,7 +77,7 @@ plugins/music-video/skills/music-video/
 ├── references/
 │   ├── song.md              audio sources, song analysis, lyrics as data only, lyric timing, captions, excerpts, vocal separation
 │   ├── direction.md         from song to film, length and orientation, frame 0, pacing and cutting, action and fan works, directions, look tests
-│   ├── styles.md            the style catalogue, with sample pictures
+│   ├── styles.md            the style catalogue, with sample pictures and video links
 │   ├── characters.md        characters: genre and appeal, ways to build them, model sheets, silhouettes, chibi, 3D models, anatomy checklist
 │   ├── production.md        storyboard, timing table, the guide for subagents, parallel work, assembly, revision rounds
 │   ├── pipeline.md          page contract, render.mjs, determinism, renderers and speed, encoding and colour
