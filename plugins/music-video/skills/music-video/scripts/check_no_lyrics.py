@@ -4,10 +4,13 @@ indices only, never the words.
 
   python3 -I tools/check_no_lyrics.py                       the project's docs, src, tools, README and look tests
   python3 -I tools/check_no_lyrics.py path/one.md path/two/  only these files or folders
+  python3 -I tools/check_no_lyrics.py --min=4               stricter, for the wrap-up: runs of 4 characters
 
 Lyrics live as data (assets/lyrics/) and are drawn by the page; they should not appear in storyboards, guides, briefs, code,
 READMEs or anything shared. A hit is a run of at least 6 consecutive characters of a lyric line (16 for lines written in Latin
 letters), ignoring spaces and punctuation. A song title is often a lyric line too: a hit on the title alone is fine.
+--min=4 also finds the short overlaps a paraphrase can leave (a shot label, a storyboard cell). It also hits common phrases
+and every mention of a title of four or more characters (77 lines in one project against 3 at the default), so read the list.
 Exit status 1 when anything hits.
 """
 import json, pathlib, re, sys
@@ -27,14 +30,15 @@ def files(args):
 
 
 def main():
+    least = next((int(a[6:]) for a in sys.argv[1:] if a.startswith('--min=')), 6)
     data = json.loads((ROOT / 'assets/lyrics/lyrics.json').read_text(encoding='utf-8'))
     grams = {}
     for l in data['lines']:
-        t = norm(l['text']); n = 16 if re.fullmatch(r'[a-z0-9]*', t) else 6
+        t = norm(l['text']); n = 16 if re.fullmatch(r'[a-z0-9]*', t) else least
         for k in range(len(t) - n + 1): grams.setdefault(t[k:k + n], l['i'])
     sizes = sorted({len(g) for g in grams})
     hits = []
-    for p in files(sys.argv[1:]):
+    for p in files([a for a in sys.argv[1:] if not a.startswith('--min=')]):
         try: text = p.read_text(encoding='utf-8')
         except UnicodeDecodeError: continue
         for ln, line in enumerate(text.splitlines(), 1):
